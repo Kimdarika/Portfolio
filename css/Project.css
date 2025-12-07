@@ -1,0 +1,88 @@
+ :root {
+    --dk-primary: orange; 
+    --dk-background-dark: #011729;
+    --dk-card-bg: #060025; 
+    --dk-text-light: #f0f0f0;
+    --dk-text-muted: #888888;
+}
+body {
+    background-color: var(--dk-background-dark);
+    color: var(--dk-text-light);
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.card{
+    margin-top: 50px;
+}
+.text-primary-custom { color: var(--dk-primary) !important; }
+.hero-section {
+    min-height: 100vh; 
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+}
+.profile-photo {
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--dk-primary);
+    box-shadow: 0 0 30px var(--dk-primary); 
+}
+.skill-bar-container {
+    background-color: var(--dk-card-bg);
+    border-radius: 0.25rem;
+    height: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
+}
+.skill-bar {
+    background-color: var(--dk-primary);
+    height: 100%;
+    transition: width 1s ease-out;
+    border-radius: 0.25rem;
+    position: relative;
+}
+.skill-bar-label {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: var(--dk-background-dark);
+    font-weight: 700;
+}
+.finish{
+    padding: 0px 100px;
+    text-align: center;
+}
+.project-card-dark {
+    background-color: var(--dk-card-bg);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+.project-card-dark:hover {
+    border-color: var(--dk-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.2);
+}
+.project-card-dark .img-fluid {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.project-card-dark:hover .img-fluid {
+    opacity: 1;
+}
+.pro {
+    border-radius: 9999px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+    margin: -90px 0pc 50px;
+}
+.text-goal{
+    color: #ffffff;
+}
+img .logo-footer{
+    border-radius: 400px;
+}
+img{
+    border-radius: 400px;
+}

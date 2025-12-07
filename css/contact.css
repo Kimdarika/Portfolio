@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #FACC15;
+    --error-red: #EF4444;
+}
+/* Input/Textarea Styling */
+.input-field {
+    transition: all 0.2s ease;
+    color: var(--text-light);
+    background-color: #334155; /* Slate 700 for inputs */
+    border: 1px solid #475569; /* Slate 600 border */
+}
+/* Animated focus effect */
+.input-field:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Blue focus ring */
+    background-color: #1E293B; /* Slightly darker on focus */
+}
+/* Button hover effect */
+.submit-button:hover {
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.5); 
+    transform: translateY(-1px);
+}

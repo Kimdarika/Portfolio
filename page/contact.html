@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Developer Portfolio | Single-Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/portfolio.js"></script>
+    <link rel="stylesheet" href="/css/Portfolio.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-white-md shadow-xl border-b border-white-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
+                <a href="/index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                <a href="/page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                <a href="/page/Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
+                <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg id="menu-icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
+            <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
+                <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="/page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="hero-login" class="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
+            <div class="absolute inset-0 bg-dark-teal opacity-90"></div>
+            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/image/back.png');"></div>
+            <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
+                <div class="relative hidden md:block w-full h-full min-h-[500px]">
+                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="/image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
+                    <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
+                </div>
+                <div class="md:p-8 text-white text-center md:text-left">
+                    <p class="text-sm font-light text-teal-accent uppercase mb-2">GRAPHIC DESIGNER</p>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold tracking-widest uppercase mb-4 text-white glow-shadow">Darika Kim</h1>
+                    <p class="text-lg font-light text-teal-accent uppercase mb-6">SOCIAL MEDIA INFLUENCER</p>
+                    <p class="max-w-md mx-auto md:mx-0 mb-8 text-gray-300 border-l-4 border-teal-accent pl-4 py-2">Design That Connects, Engages, and Elevates Your Brand with Editable Templates to Boost Your Business Success.</p>
+                    <div class="flex flex-col space-y-4 max-w-xs mx-auto md:mx-0">
+                        <input type="email" placeholder="Email Address" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
+                        <input type="password" placeholder="Password" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
+                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-gray-900 hover:bg-teal-300 transition duration-300 box-glow">Login</button>
+                        <a href="#" class="text-sm text-gray-400 hover:text-teal-accent transition duration-200">Forgot password</a>
+                    </div>
+                </div>
+            </div>
+            <button class="absolute top-5 right-5 p-3 text-teal-accent hover:text-white transition duration-200">
+                <i class="ph-bold ph-magnifying-glass text-2xl"></i>
+            </button>
+        </section>
+    </main>
+    <hr >
+    <div class="bg-bg-main min-h-screen font-sans text-text-light">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-12">
+                
+                <div class="space-y-8 lg:col-span-1">
+                    <h1 class="text-6xl font-extrabold tracking-tight text-text-light">
+                        Get In <span class="text-primary-color">Touch</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 max-w-sm">
+                        Ready to start a new project or discuss an opportunity? I'm always open to new connections.
+                    </p>
+
+                    <div class="space-y-6 pt-6">
+                        
+                        <a href="mailto:your.email@example.com" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-accent-color text-2xl w-8"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">Email Me</h3>
+                                    <p class="text-gray-400 text-sm">your.email@example.com</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+1234567890" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-accent-color text-2xl w-8"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">Call/Text</h3>
+                                    <p class="text-gray-400 text-sm">+1 (234) 567-890</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
+                            <div class="flex items-center">
+                                <i class="fas fa-link text-accent-color text-2xl w-8"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">LinkedIn</h3>
+                                    <p class="text-gray-400 text-sm">Connect Professionally</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex space-x-6 pt-8 justify-start">
+                        <a href="https://github.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="GitHub Profile">
+                            <i class="fab fa-github text-3xl"></i>
+                        </a>
+                        <a href="https://twitter.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="X (Twitter) Profile">
+                            <i class="fab fa-twitter text-3xl"></i>
+                        </a>
+                        <a href="https://dribbble.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="Dribbble Profile">
+                            <i class="fab fa-dribbble text-3xl"></i>
+                        </a>
+                        <a href="https://behance.net/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="Behance Profile">
+                            <i class="fab fa-behance text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-12 lg:mt-0 lg:col-span-2">
+                    <div class="bg-bg-card py-10 px-6 shadow-2xl rounded-2xl sm:px-12 border border-slate-700">
+                        <h2 class="text-4xl font-bold text-text-light mb-8">Send Me A Message</h2>
+                        <form id="portfolioContactForm" action="#" method="POST" class="space-y-6">
+                            
+                            <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                                <div>
+                                    <label for="full-name" class="block text-sm font-medium text-gray-300">Full Name *</label>
+                                    <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name"
+                                        class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300">Email *</label>
+                                    <input type="email" name="email" id="email" required placeholder="Enter your Email"
+                                        class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-300">Subject *</label>
+                                <input type="text" name="subject" id="subject" required placeholder="Project Inquiry, Job Offer, etc."
+                                    class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project and requirements."
+                                    class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color"></textarea>
+                            </div>
+
+                            <div class="pt-4">
+                                <button type="submit"
+                                    class="submit-button w-full bg-primary-color text-text-light py-3 px-6 border border-transparent rounded-lg text-xl font-bold shadow-lg transition duration-300 hover:bg-primary-dark focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-primary-color focus:ring-offset-bg-card">
+                                    <i class="fas fa-paper-plane mr-2"><a href="https://t.me/Darika_Kim"> Submit Inquiry</a></i>
+                                </button>
+                                <p id="formStatus" role="status" aria-live="polite" class="text-sm pt-4 hidden font-medium text-center"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo">
+                    <img class="logo-footer" src="/image/rika.jpg" alt="">
+                    <img class="logo-footer" src="/image/web.png" alt="">
+                    <img class="logo-footer" src="/image/mu.png" alt="">
+                </div>
+                <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information and my Hostory</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
+                        <li><a href="/page/store.html">Project Page</a></li>
+                        <li><a href="/page/help.html">Experience Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information about me</a></li>
+                        <li><a href="#">Project Algorithm</a></li>
+                        <li><a href="#">Project Web Design</a></li>
+                        <li><a href="#">Project UX/UI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Algorithm</h3>
+                    <ul>
+                        <li><a href="#">Analysis student performance</a></li>
+                        <li><a href="#">Rice Scan</a></li>
+                        <li><a href="#">PNC school</a></li>
+                        <li><a href="#">Gmail / message</a></li>
+                        <li><a href="#">See more</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li><a href="#">Grow skin</a></li>
+                        <li><a href="#">T-shirt Shop</a></li>
+                        <li><a href="#">Coffee Shop</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">See more</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+
+            menuButton.addEventListener('click', () => {
+                // Toggle the visibility of the mobile menu
+                mobileMenu.classList.toggle('hidden');
+                
+                // Toggle the hamburger/close icons
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+
+            // Optional: Close the menu when a link is clicked (improves UX)
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    // Ensure icons revert to the closed state
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('portfolioContactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const statusMessage = document.getElementById('formStatus');
+            
+            // Basic validation
+            if (!form.checkValidity()) {
+                statusMessage.textContent = '❌ Please fill out all required fields.';
+                statusMessage.classList.remove('hidden', 'text-primary-color', 'text-gray-400');
+                statusMessage.classList.add('text-error-red');
+                return;
+            }
+
+            // Show 'Sending...' status
+            statusMessage.textContent = '🚀 Sending your message...';
+            statusMessage.classList.remove('hidden', 'text-error-red', 'text-primary-color');
+            statusMessage.classList.add('text-gray-400');
+            submitButton.disabled = true;
+            submitButton.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // Simulate network request delay
+            setTimeout(() => {
+                // Success simulation
+                statusMessage.textContent = '✅ Success! Your message has been received.';
+                statusMessage.classList.remove('text-gray-400');
+                statusMessage.classList.add('text-primary-color');
+                
+                // Reset form and re-enable button
+                form.reset();
+                submitButton.disabled = false;
+                submitButton.classList.remove('opacity-75', 'cursor-not-allowed');
+                
+                // Hide message after a few seconds
+                setTimeout(() => {
+                    statusMessage.classList.add('hidden');
+                }, 5000);
+
+            }, 2000); // 2 second delay
+        });
+    </script>
+    <script>
+        // Define a sleek Dark Mode color palette
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-main': '#0F172A',     // Slate 900
+                        'bg-card': '#1E293B',    // Slate 800
+                        'text-light': '#F1F5F9', // Slate 100
+                        'primary-color': '#3B82F6', // Blue 500 (Strong, modern blue)
+                        'primary-dark': '#2563EB', // Blue 600
+                        'accent-color': '#FACC15', // Amber 400 (For subtle highlights)
+                        'error-red': '#EF4444',
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px rgba(59, 130, 246, 0.4)', // Subtle Blue glow
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

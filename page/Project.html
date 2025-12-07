@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darika Kim | Expert Full-Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/Portfolio.css">
+    <script src="/js/portfolio.js"></script>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/Project.css">
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-blur-md shadow-xl border-b border-primary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
+                <a href="/index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                <a href="#projects" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                <a href="/page/Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
+                <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg id="menu-icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
+            <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
+                <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="#projects" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/39/8b/b0/398bb0df12de03c82f4edf2e7f0bcb29.jpg');"></div>
+    <header id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="container py-5">
+            <div class="flex flex-col items-center justify-center text-center">
+                <img class="pro w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-xl" src="/image/rika.jpg" alt="User Profile Picture"onerror="this.onerror=null; this.src='https://placehold.co/400x400/10B981/ffffff?text=PFP';">
+            </div>
+            <p class="mb-2 text-primary-custom h5">
+                <i class="fas fa-caret-right"></i> Welcome to My Project in School
+            </p>
+            <h1 class="display-1 fw-bold mb-3 text-white">
+                DARIKA <span class="text-primary-custom">KIM</span>
+            </h1>
+            <p class="lead mb-4 text-gray"> PYTHON | JAVASCRIPT | HTML/CSS | GITHUB | VERCEL</p>
+            
+            <h2 class="h5 mb-5 mx-auto text-light" style="max-width: 800px;">
+               I have built a lot of Website It has Coffee shop, Analysis Student performance , Scan type of rice, Skin Care Website, Email System and PNC school Website also.I have use Python, Github, HTML css, JS ,SASS, Vercel Hosting also.
+            </h2>
+            <a href="#projects" class="btn btn-lg fw-bold me-3 shadow-lg" style="background-color: var(--dk-primary); color: var(--dk-background-dark);">
+                <i class="fas fa-laptop-code me-2"></i> VIEW LIVE PROJECTS
+            </a>
+        </div>
+    </header>
+    <hr style="color: aliceblue ;">
+    <section id="projects" class="py-5" style="background-color: var(--dk-card-bg);">
+        <div class="container py-4">
+            <h2 class="text-center display-5 fw-bold mb-5">
+                Project Ready Built
+            </h2>
+            <p class="text-center text-secondary mb-5  h5 finish"> I get finish My project. So some project I have built with my team member. more project I get built alone. So all of project it is very importance. I can built it and I can use somthinfg  that I get learn From teacher to apply it my task or project</p>
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-2">
+                        <img src="https://i.pinimg.com/1200x/01/75/8e/01758e1e142612c9650e182f58f80f73.jpg" class="img-fluid rounded-end h-100" alt="Image of a clean e-commerce website">
+                    </div>
+                    <div class="col-md-6 order-md-1 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">01. Cornerstone Coffee Co. Website</h3>
+                        <span class="badge bg-secondary mb-3">Front-End / Website</span>
+                        
+                        <p class="text-muted small mb-2">
+                            <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                            A digital storefront and information hub for a coffee shop or café. It serves as a crucial online presence to attract and inform customers, reinforce branding, and often facilitate sales and services.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">React</span>
+                            <span class="badge rounded-pill bg-success fw-bold">Redux</span>
+                            <span class="badge rounded-pill bg-danger fw-bold">Firebase</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1">
+                        <img src="https://i.pinimg.com/736x/1c/70/72/1c70725b312c71c53d2da6fd3e138447.jpg" class="img-fluid rounded-start h-100" alt="Image of a data analysis dashboard">
+                    </div>
+                    <div class="col-md-6 order-md-2 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">02. Student Performance Predictor</h3>
+                        <span class="badge bg-secondary mb-3">Data Science / Machine Learning</span>
+                        
+                        <p class="text-muted small mb-2">
+                            <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                           is the systematic process of evaluating and measuring students' academic progress and achievement using various data points to gain insights into individual and group performance.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Python</span>
+                            <span class="badge rounded-pill bg-warning text-dark fw-bold">Flask</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">Scikit-learn</span>
+                            <span class="badge rounded-pill bg-secondary fw-bold">Docker</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-2">
+                        <img src="https://i.pinimg.com/1200x/33/f7/93/33f79332d91a43598b970697df52bbae.jpg" class="img-fluid rounded-end h-100" alt="Image of a full-stack web application diagram">
+                    </div>
+                    <div class="col-md-6 order-md-1 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">03. Glow Skin E-commerce Platform</h3>
+                        <span class="badge bg-secondary mb-3">Full-Stack Development (MERN/MEAN Stack)</span>
+                        
+                        <p class="text-muted small mb-2">
+                             <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                            Website Focus: This brand specializes in clean mineral makeup and skincare products, offering a wide range of clinically-proven formulas and very common phrase used by numerous skincare.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Node.js</span>
+                            <span class="badge rounded-pill bg-secondary fw-bold">Express</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">MongoDB</span>
+                            <span class="badge rounded-pill bg-success fw-bold">Stripe API</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1">
+                        <img src="https://i.pinimg.com/736x/67/7c/ff/677cfff898e24d954dd5f8206d9303df.jpg" class="img-fluid rounded-start h-100" alt="Image of API integration flow">
+                    </div>
+                    <div class="col-md-6 order-md-2 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">05. Pet sell in Mobile (UX/UI)</h3>
+                        <span class="badge bg-secondary mb-3">API Integration / Financial Data</span>
+                        
+                        <p class="text-muted small mb-2">
+                             <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                           The design of digital platforms for pet adoption or sale involves a delicate balance between commerce, data transparency, and handling strong user emotions. A great "Pet Sell" UX/UI focuses on building trust, simplifying complex information, and facilitating responsible connections between potential owners and animals.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Python/Django</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">REST API</span>
+                            <span class="badge rounded-pill bg-secondary fw-bold">AWS Lambda</span>
+                            <span class="badge rounded-pill bg-danger fw-bold">OAuth 2.0</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-2">
+                        <img src="https://i.pinimg.com/1200x/6b/e7/f7/6be7f7756b8f4737a25c69f1086dfffb.jpg" class="img-fluid rounded-end h-100" alt="Image of a school website dashboard">
+                    </div>
+                    <div class="col-md-6 order-md-1 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">06. PNC School Website & CMS</h3>
+                        <span class="badge bg-secondary mb-3">Content Management / Education</span>
+                        
+                        <p class="text-muted small mb-2">
+                             <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                           Key Features: It included features essential for educational institutions, such as automated calendar generation, dedicated parent portals, and a fully responsive front-end design.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Node.js/Express</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">MongoDB</span>
+                            <span class="badge rounded-pill bg-success fw-bold">Bootstrap 5</span>
+                            <span class="badge rounded-pill bg-secondary fw-bold">Handlebars</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1">
+                        <img src="https://i.pinimg.com/1200x/14/d1/f6/14d1f6950714d2177092a26b6fac1efc.jpg" class="img-fluid rounded-start h-100" alt="Image of a messaging queue diagram">
+                    </div>
+                    <div class="col-md-6 order-md-2 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">07. Internal Asynchronous Email System</h3>
+                        <span class="badge bg-secondary mb-3">Infrastructure / Microservices</span>
+                        
+                        <p class="text-muted small mb-2">
+                            <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                           it's an infrastructure project focused on reliability and speed by moving a taxing synchronous process (sending emails) into a fast, dedicated asynchronous background process. other people can use it by sent somethin g to someone that they one.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Python/Celery</span>
+                            <span class="badge rounded-pill bg-warning text-dark fw-bold">Redis</span>
+                            <span class="badge rounded-pill bg-danger fw-bold">AWS SES</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">Microservices</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: aliceblue ;">
+            <div class="card project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-2">
+                        <img src="https://i.pinimg.com/1200x/f3/34/b8/f334b80a10a13e581798e969e590b8e7.jpg" class="img-fluid rounded-end h-100" alt="Image of machine learning classification result">
+                    </div>
+                    <div class="col-md-6 order-md-1 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">08.System Scan Type of Rice</h3>
+                        <span class="badge bg-secondary mb-3">Computer Vision / Deep Learning</span>
+                        
+                        <p class="text-muted small mb-2">
+                            <i class="text-goal ">Developed a mobile-first site for online sales and loyalty integration.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                            Refers to a Computer Vision and Deep Learning project focused on developing an AI model to analyze and classify different types of rice grains.So this is the first of my project Algorithm So it is very difficult For me also.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Python</span>
+                            <span class="badge rounded-pill bg-danger fw-bold">TensorFlow/Keras</span>
+                            <span class="badge rounded-pill bg-success fw-bold">OpenCV</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">Streamlit</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card mb-5 project-card-dark">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-1">
+                        <img src="https://i.pinimg.com/1200x/c0/3a/55/c03a55e795f13a9c514645cc6ba777af.jpg" class="img-fluid rounded-start h-100" alt="Image of a messaging queue diagram">
+                    </div>
+                    <div class="col-md-6 order-md-2 p-4 d-flex flex-column">
+                        <h3 class="card-title fw-bold text-primary-custom">09. T-shirt Website</h3>
+                        <span class="badge bg-secondary mb-3">Full-Stack Development (MERN/MEAN Stack)</span>
+                        
+                        <p class="text-muted small mb-2">
+                            <i class="text-goal ">In the website it has a lot of  T-shirt. and Than this there it has dress and Type of Khmer dress also.</i> 
+                        </p>
+                        <p class="card-text mb-3 text-light">
+                            Website Focus: This brand specializes in clean mineral makeup and skincare products, offering a wide range of clinically-proven formulas and very common phrase used by numerous skincare.
+                        </p>
+                        
+                        <div class="tech-stack-list mb-4 mt-auto">
+                            <span class="badge rounded-pill bg-dark text-white fw-bold">Python/Celery</span>
+                            <span class="badge rounded-pill bg-warning text-dark fw-bold">Redis</span>
+                            <span class="badge rounded-pill bg-danger fw-bold">AWS SES</span>
+                            <span class="badge rounded-pill bg-info text-dark fw-bold">Microservices</span>
+                        </div>
+                        
+                        <div>
+                            <a href="[Live Demo URL]" target="_blank" class="btn btn-sm btn-outline-light me-2 fw-bold">
+                                <i class="fas fa-eye me-1"></i> Demo
+                            </a>
+                            <a href="[GitHub Repo URL]" target="_blank" class="btn btn-sm text-dark fw-bold" style="background-color: var(--dk-primary);">
+                                <i class="fab fa-github me-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo">
+                    <div ><img class="logo-footer" src="/image/rika.jpg" alt=""></div>
+                    <div ><img class="logo-footer" src="/image/web.png" alt=""></div>
+                    <div ><img class="logo-footer" src="/image/mu.png" alt=""></div>
+                </div>
+                <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information and my Hostory</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
+                        <li><a href="/page/store.html">Project Page</a></li>
+                        <li><a href="/page/help.html">Experience Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information about me</a></li>
+                        <li><a href="#">Project Algorithm</a></li>
+                        <li><a href="#">Project Web Design</a></li>
+                        <li><a href="#">Project UX/UI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Algorithm</h3>
+                    <ul>
+                        <li><a href="#">Analysis student performance</a></li>
+                        <li><a href="#">Rice Scan</a></li>
+                        <li><a href="#">PNC school</a></li>
+                        <li><a href="#">Gmail / message</a></li>
+                        <li><a href="#">See more</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li><a href="#">Grow skin</a></li>
+                        <li><a href="#">T-shirt Shop</a></li>
+                        <li><a href="#">Coffee Shop</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">See more</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+
+            menuButton.addEventListener('click', () => {
+                // Toggle the visibility of the mobile menu
+                mobileMenu.classList.toggle('hidden');
+                
+                // Toggle the hamburger/close icons
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            // Optional: Close the menu when a link is clicked (improves UX)
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    // Ensure icons revert to the closed state
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

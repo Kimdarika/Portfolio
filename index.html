@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Developer Portfolio | Single-Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/portfolio.js"></script>
+    <link rel="stylesheet" href="/css/Portfolio.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-blur-md shadow-xl border-b border-primary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
+                <a href="#hero" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                <a href="/page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                <a href="#experience" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
+                <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg id="menu-icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
+            <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
+                <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="/page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/00/bd/f0/00bdf0d5f730588af68c8348dc82238c.jpg');"></div>
+        <section class="w-full py-16 sm:py-24 bg-gradient-to-br from-gray-900 to-gray-800 hero-visuals">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 max-w-7xl">
+                <div class="lg:w-1/2 max-w-lg lg:text-left text-center">
+                    <p class="text-xl font-medium text-amber-500 mb-3 transition hover:scale-[1.02] transform">
+                        Hello There!
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        I'm <span class="text-amber-500 transition hover:text-amber-400">Darika Kim</span>, Student web developer in <span class="text-amber-500 transition hover:text-amber-400">PNC</span>.
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-10">
+                        My name is Darika. I come from Siem Reap Province. I am currently a student in the 2026c cohort at Passerelles numériques Cambodia, focusing on building modern web applications.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:justify-center lg:justify-start">
+                        <a href="#" class="inline-flex inline-flex-1 items-center justify-center px-8 py-3 font-semibold rounded-lg bg-yellow-600 text-white shadow-lg transition hover:bg-orange-500 hover:-translate-y-1 focus:ring-4 focus:ring-orange-500 focus:ring-opacity-50"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>View My Portfolio </a>
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 font-semibold rounded-lg text-amber-500 border-2 border-amber-500 transition hover:bg-amber-500 hover:text-gray-900 hover:-translate-y-1 focus:ring-4 focus:ring-amber-500 focus:ring-opacity-50">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Hire Me
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
+                    <img 
+                        src="/image/rika.jpg" 
+                        alt="Darika Kim Professional Portrait"
+                        class="w-80 h-80 object-cover rounded-full border-8 border-yellow-600 shadow-2xl transition hover:scale-[1.03] hover:shadow-orange-600/70"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x400/4F46E5/FFFFFF?text=Darika+Kim';"
+                    >
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section-padding bg-dark-bg border-t border-primary-dark">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white tracking-wide">About Me & <span class="text-accent-teal">Technical Skills</span></h2>
+                <p class="text-center text-secondary mb-5">Technical Skills are the measurable, job-specific abilities and tools you have mastered. This section proves your capability to perform the required duties of a technical role.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-1 border-r border-primary-dark lg:pr-12">
+                        <h3 class="text-2xl font-semibold mb-4 text-accent-teal">My Story</h3>
+                        <p class="text-gray-300 mb-4">
+                            Driven by curiosity, I transitioned from a general studies background into software development. I thrive on solving complex problems and building intuitive user experiences. My current focus is on mastering HTML JavaScript, Python, React, SQL, Git to create robust, full-stack applications.
+                        </p>
+                        <p class="text-gray-400">
+                            I believe good software should be clean, efficient, and accessible to everyone. Always learning, always building.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <h3 class="text-2xl font-semibold mb-6 text-accent-teal">Key Technologies</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-code-simple text-4xl text-accent-teal mb-2"></i>
+                                <p class="font-mono text-sm font-bold">JavaScript / TypeScript</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-leaf text-4xl text-accent-teal mb-2"></i>
+                                <p class="font-mono text-sm font-bold">React (in my future. / Next.js</p>
+                            </div>
+                             <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-lightning text-4xl text-yellow-500 mb-2"></i>
+                                <p class="font-mono text-sm font-bold">Node.js / Express</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-database text-4xl text-accent-teal mb-2"></i>
+                                <p class="font-mono text-sm font-bold">Xampp / SQL</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-palette text-4xl text-accent-teal mb-2"></i>
+                                <p class="font-mono text-sm font-bold">Tailwind CSS / UI/UX</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-primary-dark/50 text-center transition hover:bg-primary-dark hover:scale-105">
+                                <i class="ph-git-branch text-4xl text-accent-teal mb-2"></i>
+                                <p class="font-mono text-sm font-bold">Git / GitHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section-padding bg-dark-bg/60 border-t border-primary-dark ">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white tracking-wide ">
+                    School <span class="text-accent-teal">Projects</span> (3-5 Best)
+                </h2>
+                <p class="text-center text-secondary mb-5">in the context of a portfolio, refers to academic work, creative assignments, or research that you completed during your formal education (high school, college, or graduate school) that directly demonstrates your skills, knowledge, and ability to execute complex tasks.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card p-6 rounded-xl shadow-lg transition duration-300">
+                        <img src="https://i.pinimg.com/736x/ec/b4/14/ecb41449333d531f3d6f9bba33c73f04.jpg" alt="Project 1 Thumbnail" class="rounded-lg mb-4 w-full h-40 object-cover">
+                        <h3 class="text-2xl font-bold mb-2 text-accent-teal">Coffee Shop</h3>
+                        <p class="text-gray-400 mb-4 text-sm">a digital storefront and information hub for a coffee shop or café. It serves as a crucial online presence to attract and inform customers, reinforce branding, and often facilitate sales and services.</p>
+                        <p class="font-mono text-xs text-gray-500 mb-4">My current focus is on mastering HTML JavaScript, Python, React, SQL, Git to create robust, full-stack applications.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-globe text-lg mr-2"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-github-logo text-lg mr-2"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card p-6 rounded-xl shadow-lg transition duration-300">
+                        <img src="https://i.pinimg.com/1200x/b0/b3/1f/b0b31f442f073635330b80bcf02268a8.jpg" alt="Project 2 Thumbnail" class="rounded-lg mb-4 w-full h-40 object-cover">
+                        <h3 class="text-2xl font-bold mb-2 text-accent-teal">Student performance</h3>
+                        <p class="text-gray-400 mb-4 text-sm">is the systematic process of evaluating and measuring students' academic progress and achievement using various data points to gain insights into individual and group performance.</p>
+                        <p class="font-mono text-xs text-gray-500 mb-4">My current focus is on mastering HTML JavaScript, Python, React, SQL, Git to create robust, full-stack applications.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-globe text-lg mr-2"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-github-logo text-lg mr-2"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card p-6 rounded-xl shadow-lg transition duration-300">
+                        <img src="/image/2.jpg" alt="Project 3 Thumbnail" class="rounded-lg mb-4 w-full h-40 object-cover">
+                        <h3 class="text-2xl font-bold mb-2 text-accent-teal">Grow Skin</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Website Focus: This brand specializes in clean mineral makeup and skincare products, offering a wide range of clinically-proven formulas and very common phrase used by numerous skincare.</p>
+                        <p class="font-mono text-xs text-gray-500 mb-4">My current focus is on mastering HTML JavaScript, Python, React, SQL, Git to create robust, full-stack applications.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-globe text-lg mr-2"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-white hover:text-accent-teal flex items-center font-semibold">
+                                <i class="ph-github-logo text-lg mr-2"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="section-padding bg-dark-bg border-t border-primary-dark">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white tracking-wide">
+                    Education & <span class="text-accent-teal">Experience</span>
+                </h2>
+                <div class="space-y-12">
+                    <div class="border-l-4 border-accent-teal pl-6 relative">
+                        <div class="absolute -left-3 top-0 w-6 h-6 bg-accent-teal rounded-full border-4 border-dark-bg"></div>
+                        <p class="text-lg font-bold text-white">Web development in School</p>
+                        <p class="text-accent-teal font-semibold">Passerelles numériques Cambodia, Phnom Penh</p>
+                        <p class="text-gray-400 text-sm italic mb-2">2023 - Present (Expected Graduation: 2026)</p>
+                        <p class="text-gray-300">Relevant Coursework: Data Structures & Algorithms, Database Management, Web Development, English.</p>
+                    </div>
+                    <div class="border-l-4 border-primary-dark pl-6 relative">
+                        <div class="absolute -left-3 top-0 w-6 h-6 bg-primary-dark rounded-full border-4 border-dark-bg"></div>
+                        <p class="text-lg font-bold text-white"> Web Development Project</p>
+                        <p class="text-primary-dark font-semibold">Tech Innovations Inc.</p>
+                        <p class="text-gray-400 text-sm italic mb-2">Summer 2025-2026</p>
+                        <p class="text-gray-300">Refers to a practical, hands-on project that a junior developer builds from start to finish. This is the single most effective way for them to learn essential skills, build a portfolio, and demonstrate their capabilities to potential employers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hero-login" class="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
+            <div class="absolute inset-0 bg-dark-teal opacity-90"></div>
+            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/ae/26/fc/ae26fc1e8578b86ed5d37d657f3ac4fd.jpg');"></div>
+            <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
+                <div class="relative hidden md:block w-full h-full min-h-[500px]">
+                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="/image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
+                    <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
+                </div>
+                <div class="md:p-8 text-white text-center md:text-left">
+                    <p class="text-sm font-light text-teal-accent uppercase mb-2">GRAPHIC DESIGNER</p>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold tracking-widest uppercase mb-4 text-white glow-shadow">Darika Kim</h1>
+                    <p class="text-lg font-light text-teal-accent uppercase mb-6">SOCIAL MEDIA INFLUENCER</p>
+                    <p class="max-w-md mx-auto md:mx-0 mb-8 text-gray-300 border-l-4 border-teal-accent pl-4 py-2">Design That Connects, Engages, and Elevates Your Brand with Editable Templates to Boost Your Business Success.</p>
+                    <div class="flex flex-col space-y-4 max-w-xs mx-auto md:mx-0">
+                        <input type="email" placeholder="Email Address" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
+                        <input type="password" placeholder="Password" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
+                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-yellow-500 hover:bg-gray-200 transition duration-300 box-glow">Login</button>
+                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-yellow-500 hover:bg-gray-200 transition duration-300 box-glow"><a href="https://t.me/Darika_Kim">Send Me a Message</a> </button>
+                        <a href="#" class="text-sm text-gray-400 hover:text-teal-accent transition duration-200">Forgot password</a>
+                    </div>
+                </div>
+            </div>
+            <button class="absolute top-5 right-5 p-3 text-teal-accent hover:text-white transition duration-200">
+                <i class="ph-bold ph-magnifying-glass text-2xl"></i>
+            </button> 
+        </section> 
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo">
+                    <img class="logo-footer" src="/image/rika.jpg" alt="">
+                    <img class="logo-footer" src="/image/web.png" alt="">
+                    <img class="logo-footer" src="/image/mu.png" alt="">
+                </div>
+                <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information and my Hostory</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
+                        <li><a href="/page/store.html">Project Page</a></li>
+                        <li><a href="/page/help.html">Experience Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information about me</a></li>
+                        <li><a href="#">Project Algorithm</a></li>
+                        <li><a href="#">Project Web Design</a></li>
+                        <li><a href="#">Project UX/UI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Algorithm</h3>
+                    <ul>
+                        <li><a href="#">Analysis student performance</a></li>
+                        <li><a href="#">Rice Scan</a></li>
+                        <li><a href="#">PNC school</a></li>
+                        <li><a href="#">Gmail / message</a></li>
+                        <li><a href="#">See more</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li><a href="#">Grow skin</a></li>
+                        <li><a href="#">T-shirt Shop</a></li>
+                        <li><a href="#">Coffee Shop</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">See more</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+
+            menuButton.addEventListener('click', () => {
+                // Toggle the visibility of the mobile menu
+                mobileMenu.classList.toggle('hidden');
+                
+                // Toggle the hamburger/close icons
+                openIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+
+            // Optional: Close the menu when a link is clicked (improves UX)
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    // Ensure icons revert to the closed state
+                    openIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</body>
+</html>

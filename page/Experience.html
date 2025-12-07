@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Developer Portfolio | Single-Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/portfolio.js"></script>
+    <link rel="stylesheet" href="/css/exper.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/page/Project.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/exper.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-teal': '#0f1717',
+                        'teal-accent': '#00ffcc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body >
+    <div class="antialiased">
+        <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-blur-md shadow-xl border-b border-primary-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+                <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
+                    <a href="#hero" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                    <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                    <a href="/page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                    <a href="#experience" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                    <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                </div>
+                <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
+                    <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg id="menu-icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
+                <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
+                    <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                    <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                    <a href="/page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                    <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                    <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/1200x/e5/9e/bf/e59ebf3e6d761a7e3051d488f79e40c4.jpg');"></div>
+    <div class="bg-dark-bga text-white font-sans antialiased min-h-screen">
+        <div class="flex flex-col items-center justify-center text-center">
+                <img id="profile" class="pro w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-xl" src="/image/rika.jpg" alt="User Profile Picture"onerror="this.onerror=null; this.src='https://placehold.co/400x400/10B981/ffffff?text=PFP';">
+        </div>
+        <section id="education" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-accent-teal shadow-accent-glow">
+                        Darika Kim 
+                    </h2>
+                    <p class="text-xl text-secondary-text max-w-2xl mx-auto">
+                        A record of formal training, specialized workshops, and creative research that define my professional perspective.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class=" exspert relative py-12 antialiased bg-dark-bga text-white mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 p-4 lg:p-12">
+
+                <article class="group">
+                    <div
+                        class="p-8 h-full rounded-2xl bg-card-bg shadow-card border border-accent-teal/30 hover:shadow-3xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-2xl font-extrabold text-white flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-accent-teal shrink-0">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                                The first Dream in my line
+                            </h3>
+                            <span class="text-sm font-semibold text-secondary-text uppercase tracking-widest block text-right ml-4">
+                                Oct 8 2024
+                            </span>
+                        </div>
+
+                        <p class="text-lg font-medium text-accent-teal mb-2">Hight School 12A for a student Science</p>
+                        <p class="text-sm text-secondary-text mb-4">Siem Reap | **Banteay Srey**</p>
+
+                        <div class="text-sm space-y-2 pt-3 border-t border-gray-700">
+                            <p class="font-bold text-white">Final Exam for finish grade 12A</p>
+                            <p class="italic ml-2 border-l-2 border-accent-teal pl-3 text-gray-300">
+                                I am a student I come from Siem Reap Province. In my final Exam when I finnish class 12A I got ( <span class="text-green-400"> E</span>)
+                            </p>
+                            <p class="font-bold text-white pt-2">My score In final Exam :</p>
+                            <ul class="list-disc list-inside ml-4 text-secondary-text text-xs space-y-1">
+                                <li>English score:... /50 ✅</li>
+                                <li>Math score:... /125 ✅</li>
+                                <li>History score:...50 ✅</li>
+                                <li>Biology score:... /75 ✅</li>
+                                <li>Chemistry score:... /75 ✅</li>
+                                <li>Physics score:... /75 ✅</li>
+                                <li>Khmer score:... /75 ✅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div
+                        class="p-8 h-full rounded-2xl bg-card-bg shadow-card border border-accent-teal/30 hover:shadow-3xl transition duration-300 transform hover:-translate-y-1"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <span class="text-sm font-semibold text-secondary-text uppercase tracking-widest block text-left mr-4">
+                                Nov 2024 - Jan 2025
+                            </span>
+                            <h3 class="text-2xl font-extrabold text-white flex items-center text-right">
+                                Work in BNA Coffee Shop
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 ml-3 text-accent-teal shrink-0">
+                                    <path d="M21.5 16H20a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1.5l.5-4a2 2 0 0 0-2-2z"></path>
+                                    <path d="M15 15.5V4l7 4-7 4"></path>
+                                    <path d="M3.5 16H5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H3.5l-.5-4a2 2 0 0 1 2-2z"></path>
+                                    <path d="M9 15.5V4l-7 4 7 4"></path>
+                                    <path d="M7 16V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12"></path>
+                                </svg>
+                            </h3>
+                        </div>
+
+                        <p class="text-lg font-medium text-accent-teal mb-2">BNA Coffee Shop</p>
+                        <p class="text-sm text-secondary-text mb-4">I am an employee and work as a cashier and services in BNA Coffee Shop at Svay Reang Province</p>
+
+                        <ul class="list-disc list-inside ml-4 text-secondary-text space-y-1 text-xs pt-3 border-t border-gray-700">
+                            <li>Handled customer payments and operated the cashier system accurately ✅</li>
+                            <li>Provided customer service, greeted guests, and took orders ✅</li>
+                            <li>Prepared and served drinks/food based on shop standards ✅</li>
+                            <li>Maintained cleanliness of the counter and dining area ✅</li>
+                            <li>Assisted with stock checking and daily shop operations ✅</li>
+                        </ul>
+
+                        <div class="text-sm space-y-2 pt-3 border-t border-gray-700 mt-4">
+                            <p class="font-bold text-white">Key Achievements:</p>
+                            <ul class="list-disc list-inside ml-4 text-secondary-text text-xs space-y-1">
+                                <li>Recognized for excellent customer service and teamwork. ✅</li>
+                                <li>Maintained **100% accuracy in cash handling** during shifts ✅</li>
+                                <li>Helped improve service flow by organizing order-taking and communication between staff ✅ </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div
+                        class="p-8 h-full rounded-2xl bg-card-bg shadow-card border border-accent-teal/30 hover:shadow-3xl transition duration-300 transform hover:-translate-y-1"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-2xl font-extrabold text-white flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-accent-teal shrink-0">
+                                    <rect width="20" height="12" x="2" y="5" rx="2"></rect>
+                                    <line x1="2" x2="22" y1="17" y2="17"></line>
+                                    <line x1="6" x2="6" y1="17" y2="21"></line>
+                                    <line x1="18" x2="18" y1="17" y2="21"></line>
+                                </svg>
+                                Digital Media
+                            </h3>
+                            <span class="text-sm font-semibold text-secondary-text uppercase tracking-widest block text-right ml-4">
+                                2025 - 2026
+                            </span>
+                        </div>
+
+                        <p class="text-lg font-medium text-accent-teal mb-2">Future Skills Institute</p>
+                        <p class="text-sm text-secondary-text mb-4">Online | Graphic Design & UX Focus</p>
+
+                        <div class="text-sm space-y-2 pt-3 border-t border-gray-700">
+                            <p class="font-bold text-white">Core Skills Developed:</p>
+                            <ul class="list-disc list-inside ml-4 text-secondary-text text-xs space-y-1">
+                                <li> Advanced Proficiency in **Adobe Creative Suite** (InDesign, Illustrator) ✅</li>
+                                <li> Principles of **UI/UX design** for web applications ✅</li>
+                                <li> Creating **motion graphics** for social media (Social Media Influencer focus) ✅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div
+                        class="p-8 h-full rounded-2xl bg-card-bg shadow-card border border-accent-teal/30 hover:shadow-3xl transition duration-300 transform hover:-translate-y-1"
+                    >
+                        <div class="flex items-start justify-between mb-4">
+                            <span class="text-sm font-semibold text-secondary-text uppercase tracking-widest block text-left mr-4">
+                                2025 - 2026
+                            </span>
+                            <h3 class="text-2xl font-extrabold text-white flex items-center text-right">
+                                Professional life
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 ml-3 text-accent-teal shrink-0">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                    <path d="M19 13.5L10.5 5"></path>
+                                </svg>
+                            </h3>
+                        </div>
+
+                        <p class="text-lg font-medium text-accent-teal mb-2">The Passerelles numériques Cambodia</p>
+                        <p class="text-sm text-secondary-text mb-4">PNC is a highly reputable institution providing intensive training in IT, professional skills, English, and soft skills, preparing students to become work-ready professionals in the digital field.</p>
+
+                        <div class="text-sm space-y-2 pt-3 border-t border-gray-700">
+                            <p class="font-bold text-white">Focus & Output at PNC:</p>
+                            <ul class="list-disc list-inside ml-4 text-secondary-text text-xs space-y-1">
+                                <li>Hands-on training in **web development, programming, networking**, and IT fundamentals✅</li>
+                                <li>Development of strong **professional skills**, including teamwork, communication, problem-solving, and project management✅</li>
+                                <li>Participation in workshops, internships, and real-world simulations to build **career readiness**✅</li>
+                                <li>Completed multiple projects demonstrating creativity, discipline, and technical skill development✅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section id="about-detail" class="py-16 newInfo md:py-24 bg-dark-teal border-t border-b border-teal-accent/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="lg:pr-10">
+                    <div class="mb-8">
+                        <h2 class="text-3xl font-bold mb-4 text-white">Hi there!</h2>
+                        <h3 class="text-xl font-light mb-6 text-teal-accent">
+                            I'm <span class="text-2xl font-extrabold uppercase glow text-orange-400 ">Darika</span> A Social Media Influencer & Graphic Designer
+                        </h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">With over 5 years of experience in visual design, branding, and content creation, I help businesses and individuals establish a strong online presence. I specialize in creating engaging, high-converting social media content that resonates with their target audience and achieves core marketing goals. </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">By blending creativity with data-driven strategies, I supercharge content that enhances engagement and drives conversions. My skills include high-level graphic design, video editing, and campaign management, ensuring your brand stands out and creates visually compelling content that resonates with their audience.</p>
+                    <button class="px-6 py-2 border-2 border-teal-accent text-teal-accent font-semibold uppercase rounded-full hover:bg-teal-accent hover:text-gray-900 transition duration-300">Read More</button>
+                    <div class="mt-10 pt-6 border-t border-teal-accent/20 flex items-center space-x-6">
+                        <span class="text-gray-400 uppercase text-sm tracking-wider">Follow Me</span>
+                        <a href="#" class="text-teal-accent hover:text-white transition duration-200"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                        <a href="#" class="text-teal-accent hover:text-white transition duration-200"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                        <a href="#" class="text-teal-accent hover:text-white transition duration-200"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                        <span class="text-sm text-gray-400 border-l border-teal-accent/20 pl-4">JERIC PULLAPH</span>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block w-full h-full min-h-[500px]">
+                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl shadow-2xl" src="https://i.pinimg.com/736x/22/5e/60/225e60376121ac36d64c199e948812cc.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';" alt="Jeric Pulla profile portrait" /><div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-gray-900">
+            <section id="portfolio" class="py-16 md:py-24 bg-dark-teal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <p class="text-lg font-medium text-teal-accent tracking-widest uppercase mb-2">For my Projects Experience</p>
+                        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">problem-solving, and impact.</h2>
+                        <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed text-lg">This is my Experience. And what is I met or do about something also. I get learn at  PNC it is special for me. after I learn about head skill I get build about a lot of project.</p>
+                    </div>
+                    <div role="tablist" aria-label="Portfolio Categories" class="flex justify-center space-x-4 sm:space-x-8 border-b border-teal-accent/30 pb-4 mb-12 overflow-x-auto">
+                        <button id="tab-posters" data-target="content-posters" role="tab" aria-selected="true" class="portfolio-tab text-base font-old uppercase tracking-wide text-white bg-teal-accent/10 border-b-2 border-teal-accent py-2 px-4 transition duration-300 shadow-lg shadow-teal-accent/20 whitespace-nowrap">
+                            Design/UXUI/poster Projects
+                        </button>
+                        <button id="tab-invitations" data-target="content-invitations" role="tab" aria-selected="false" class="portfolio-tab text-base font-semibold uppercase tracking-wide text-gray-400 hover:text-teal-accent py-2 px-4 border-b-2 border-transparent hover:border-teal-accent/50 transition duration-300 whitespace-nowrap">
+                            Web Projects
+                        </button>
+                        <button id="tab-banners" data-target="content-banners" role="tab" aria-selected="false" class="portfolio-tab text-base font-semibold uppercase tracking-wide text-gray-400 hover:text-teal-accent py-2 px-4 border-b-2 border-transparent hover:border-teal-accent/50 transition duration-300 whitespace-nowrap">
+                            Algorithm Projects
+                        </button>
+                        <button id="tab-logo" data-target="content-logo" role="tab" aria-selected="false" class="portfolio-tab text-base font-semibold uppercase tracking-wide text-gray-400 hover:text-teal-accent py-2 px-4 border-b-2 border-transparent hover:border-teal-accent/50 transition duration-300 whitespace-nowrap">
+                            GitHub Projects
+                        </button>
+                        <button id="tab-photography" data-target="content-photography" role="tab" aria-selected="false" class="portfolio-tab text-base font-semibold uppercase tracking-wide text-gray-400 hover:text-teal-accent py-2 px-4 border-b-2 border-transparent hover:border-teal-accent/50 transition duration-300 whitespace-nowrap">
+                            Other Projects
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <button aria-label="Previous item" class="absolute left-0 top-1/2 -translate-y-1/2 p-3 text-white bg-teal-accent/80 rounded-full hover:bg-teal-accent transition duration-300 z-20 shadow-xl opacity-90 hover:opacity-100 hidden sm:block">
+                            <i class="ph-bold ph-caret-left text-xl"></i>
+                        </button>
+
+                        <div id="portfolio-content-wrapper">
+                            
+                            <div id="content-posters" class="portfolio-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/c6/b1/b0/c6b1b017b12eee4b4c149bae719fc01b.jpg" alt="Poster design for a coffee shop brand identity">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Brand Identity</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Coffee Shop Campaign</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/b7/48/38/b74838ec2ecf59b8df9337cd6b72df44.jpg" alt="Poster design for a skincare product line">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Packaging</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Skincare Product Line</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/85/d1/78/85d1789556cbb5d7768158cd4eed1992.jpg" alt="Poster design for an academic performance report">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Infographics</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Academic Report</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="content-invitations" class="portfolio-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/1200x/2b/c0/33/2bc033b9b303639741361a55f5da5392.jpg" alt="Elegant wedding invitation suite design">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Print Design</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Luxury Wedding Suite</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/91/06/e8/9106e8b4c96651fbdc711a9f588e7a8a.jpg" alt="Corporate event invitation with embossed gold foil">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Corporate</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Executive Gala Invite</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/1200x/0c/23/56/0c2356d9f738f780286bf0fdff4e82c1.jpg" alt="Minimalist birthday party invitation design">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Personal</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Minimalist Birthday</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="content-banners" class="portfolio-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/46/95/ab/4695ab2e031f45be1a1a2f2dbe722826.jpg" alt="Web banner design for a software launch">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Web Design</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Software Launch Banner</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/08/49/3d/08493dd90dd98eaf9be5bcea86f82d10.jpg" alt="Large vinyl banner design for outdoor real estate advertising">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Print Marketing</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Outdoor Real Estate</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/20/be/6b/20be6b190d61da060c03528f8aa81863.jpg" alt="Digital display banner for a summer sale campaign">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">E-commerce</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Summer Sale Ad</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div id="content-logo" class="portfolio-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/1200x/2d/a0/f4/2da0f4aeb2391a90f2bc7b2b80b3776a.jpg" alt="Logo design for a minimalist coffee brand">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Brand Identity</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Artisan Roast Logo</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/27/53/99/2753997bfa4eb2e7444737bf96a91d9a.jpg" alt="Geometric logo for a tech startup">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Tech & Software</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Nexus Solutions Mark</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/d5/24/75/d52475d29fbe16bca71cbdc1843df268.jpg" alt="Stylized handwritten logo for a fashion designer">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Fashion & Luxury</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Haute Couture Script</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div id="content-photography" class="portfolio-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/6a/6e/a0/6a6ea0c5e83d660efe164fb31c14b914.jpg" alt="Professional portrait photography">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Studio</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Corporate Headshots</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/736x/b2/31/f3/b231f3f845ce0360aee7fb17ee9588ca.jpg" alt="Product photography for a high-end electronic device">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">E-commerce</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Tech Product Shots</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="group relative overflow-hidden rounded-xl border border-teal-accent/10 transition duration-500 hover:shadow-2xl hover:shadow-teal-accent/20 hover:scale-[1.02] transform">
+                                    <img class="w-full h-auto object-cover transition duration-500 group-hover:opacity-80" src="https://i.pinimg.com/1200x/a9/ab/b4/a9abb4ee1740bb4cb96415fddb49659e.jpg" alt="Architectural photography of modern building exterior">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                                        <p class="text-xs font-semibold text-teal-accent uppercase mb-1">Architecture</p>
+                                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wider group-hover:text-teal-accent transition duration-300">Modern Building Exterior</h3>
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center bg-teal-accent/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500">
+                                        <span class="text-white text-sm font-bold border border-white px-4 py-2 rounded-full">View Project &rarr;</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <button aria-label="Next item" class="absolute right-0 top-1/2 -translate-y-1/2 p-3 text-white bg-teal-accent/80 rounded-full hover:bg-teal-accent transition duration-300 z-20 shadow-xl opacity-90 hover:opacity-100 hidden sm:block">
+                            <i class="ph-bold ph-caret-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const tabs = document.querySelectorAll('.portfolio-tab');
+                    const contentAreas = document.querySelectorAll('.portfolio-content');
+
+                    // Define the Tailwind classes for active and inactive states
+                    const activeClasses = ['bg-teal-accent/10', 'border-teal-accent', 'font-bold', 'text-white', 'shadow-lg', 'shadow-teal-accent/20'];
+                    const inactiveClasses = ['text-gray-400', 'border-transparent', 'font-semibold'];
+
+                    const switchTab = (selectedTab) => {
+                        const targetId = selectedTab.getAttribute('data-target');
+
+                        // 1. Deactivate all tabs visually
+                        tabs.forEach(tab => {
+                            tab.setAttribute('aria-selected', 'false');
+                            tab.classList.remove(...activeClasses);
+                            tab.classList.add(...inactiveClasses);
+                        });
+
+                        // 2. Activate the selected tab visually
+                        selectedTab.setAttribute('aria-selected', 'true');
+                        selectedTab.classList.add(...activeClasses);
+                        selectedTab.classList.remove(...inactiveClasses);
+
+                        // 3. Hide all content areas
+                        contentAreas.forEach(content => {
+                            content.classList.add('hidden');
+                        });
+
+                        // 4. Show the target content area
+                        const targetContent = document.getElementById(targetId);
+                        if (targetContent) {
+                            targetContent.classList.remove('hidden');
+                        }
+                    };
+
+                    // Add click listener to all tabs
+                    tabs.forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            switchTab(tab);
+                        });
+                    });
+
+                    // Initialization: Set the initial state correctly on load
+                    const initialTab = document.querySelector('.portfolio-tab[aria-selected="true"]');
+                    if (initialTab) {
+                        // Ensure only the content corresponding to the initially active tab is visible
+                        contentAreas.forEach(content => {
+                            if (content.id === initialTab.getAttribute('data-target')) {
+                                content.classList.remove('hidden');
+                            } else {
+                                content.classList.add('hidden');
+                            }
+                        });
+                    }
+                });
+            </script>
+        </div>
+    </div>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Using a very dark blue/black for max contrast
+                        'dark-bg': '#0C1322', 
+                        'dark-bga': '#0C1322', 
+                        'accent-teal': 'orange', // Retaining your primary orange accent
+                        'primary-dark': '#143C40',
+                        // Slightly elevated background for cards
+                        'card-bg': '#1A2436', 
+                        'secondary-text': '#A0AEC0',
+                    },
+                    boxShadow: {
+                        // New, softer shadow for depth
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                        'accent-glow': '0 0 10px rgba(255, 165, 0, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo">
+                    <img class="logo-footer" src="/image/rika.jpg" alt="">
+                    <img class="logo-footer" src="/image/web.png" alt="">
+                    <img class="logo-footer" src="/image/mu.png" alt="">
+                </div>
+                <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information and my Hostory</a></li>
+                        <li><a href="#">partner for natural,</a></li>
+                        <li><a href="#">radiant, and</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">cruelty-free beauty.</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>OUR PAGES</h3>
+                    <ul>
+                        <li><a href="/index.html">Home Page</a></li>
+                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
+                        <li><a href="/page/store.html">Project Page</a></li>
+                        <li><a href="/page/help.html">Experience Page</a></li>
+                        <li><a href="/page/contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Information about me</a></li>
+                        <li><a href="#">Project Algorithm</a></li>
+                        <li><a href="#">Project Web Design</a></li>
+                        <li><a href="#">Project UX/UI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Algorithm</h3>
+                    <ul>
+                        <li><a href="#">Analysis student performance</a></li>
+                        <li><a href="#">Rice Scan</a></li>
+                        <li><a href="#">PNC school</a></li>
+                        <li><a href="#">Gmail / message</a></li>
+                        <li><a href="#">See more</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li><a href="#">Grow skin</a></li>
+                        <li><a href="#">T-shirt Shop</a></li>
+                        <li><a href="#">Coffee Shop</a></li>
+                        <li><a href="#">Skin care</a></li>
+                        <li><a href="#">See more</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2019 – Divi.Express All Right Reserved</p>
+            <div class="bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</body>
+</html>
