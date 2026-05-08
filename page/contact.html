@@ -13,16 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    .pro {
+        animation: float 3s ease-in-out infinite;
+        transition: all 0.3s ease;
+    }
+    .nav-hov:hover{
+        background: linear-gradient(
+        90deg,
+        orange,
+        rgb(255, 255, 255),
+        #2DD4BF
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+            
+    }
+</style>
 <body class="antialiased">
     <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-white-md shadow-xl border-b border-white-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
             <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
-                <a href="../index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
-                <a href="../index.html#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
-                <a href="Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
-                <a href="Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
-                <a href="contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                <a href="../index.html" class="text-accent-teal hover:text-white transition duration-200 nav-hov">Home</a>
+                <a href="../index.html#about" class="text-white hover:text-accent-teal transition duration-200 nav-hov">About & Skills</a>
+                <a href="Project.html" class="text-white hover:text-accent-teal transition duration-200 nav-hov" >Projects</a>
+                <a href="Experience.html" class="text-white hover:text-accent-teal transition duration-200 nav-hov">Experience</a>
+                <a href="contact.html" class="text-white hover:text-accent-teal transition duration-200 nav-hov">Contact</a>
             </div>
             <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
                 <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,11 +62,11 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
             <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
-                <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-                <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
-                <a href="Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
-                <a href="Experience.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-                <a href="contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="Experience.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
             </div>
         </div>
     </nav>
@@ -49,7 +76,7 @@
             <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('../image/back.png');"></div>
             <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
                 <div class="relative hidden md:block w-full h-full min-h-[500px]">
-                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="../image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
+                    <img class=" pro absolute inset-0 w-full h-full image-filter rounded-xl "src="../image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
                     <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
                 </div>
                 <div class="md:p-8 text-white text-center md:text-left">

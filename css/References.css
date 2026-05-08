@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0A0F1D 0%, #0F172A 100%);
+    color: #E2E8F0;
+    line-height: 1.5;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* Header Section */
+.references-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.references-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #FFFFFF 0%, #2DD4BF 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.75rem;
+}
+.divider {
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #2DD4BF, #3B82F6);
+    margin: 0.75rem auto;
+    border-radius: 3px;
+}
+.references-header p {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Grid Layout for Reference Cards */
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.8rem;
+}
+@media (max-width: 900px) {
+    .references-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+/* Reference Card Style - Clean, Professional, Glassmorphism */
+.reference-card {
+    background: rgba(18, 25, 40, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(45, 212, 191, 0.15);
+    border-radius: 24px;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.reference-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(45, 212, 191, 0.4);
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.4);
+    background: rgba(22, 32, 50, 0.8);
+}
+/* Avatar / Initial Circle */
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2DD4BF20, #3B82F620);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(45, 212, 191, 0.3);
+}
+.avatar i {
+    font-size: 2rem;
+    color: #2DD4BF;
+}
+.card-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    margin-bottom: 0.3rem;
+}
+.card-position {
+    display: inline-block;
+    background: rgba(45, 212, 191, 0.12);
+    padding: 0.25rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #2DD4BF;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(45, 212, 191, 0.2);
+}
+/* Contact info rows - Icon + Text inline (perfect alignment) */
+.contact-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s;
+}
+.contact-row:hover {
+    border-bottom-color: rgba(45, 212, 191, 0.3);
+    transform: translateX(3px);
+}
+.contact-row i {
+    font-size: 1.3rem;
+    width: 1.8rem;
+    flex-shrink: 0;
+    color: #2DD4BF;
+}
+/* Email icon slightly different tint */
+.contact-row i.ph-envelope {
+    color: #60A5FA;
+}
+.contact-row i.ph-phone-call {
+    color: #2DD4BF;
+}
+.contact-row .contact-text {
+    font-size: 0.85rem;
+    color: #CBD5E1;
+    word-break: break-all;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.contact-row .contact-text a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.contact-row .contact-text a:hover {
+    color: #2DD4BF;
+    text-decoration: underline;
+}
+/* Divider between cards if needed, but subtle */
+.card-divider {
+    height: 1px;
+    background: rgba(45, 212, 191, 0.1);
+    margin: 1rem 0 0.5rem;
+}
+/* Badge for "Reference Available" optional */
+.ref-badge {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.badge {
+    font-size: 0.65rem;
+    background: rgba(45, 212, 191, 0.08);
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    color: #2DD4BF;
+    letter-spacing: 0.3px;
+}
+/* Responsive */
+@media (max-width: 550px) {
+    body {
+        padding: 2rem 1rem;
+    }
+    .references-header h1 {
+        font-size: 2rem;
+    }
+    .reference-card {
+        padding: 1.4rem;
+    }
+    .card-name {
+        font-size: 1.3rem;
+    }
+    .contact-row i {
+        font-size: 1.1rem;
+        width: 1.5rem;
+    }
+    .contact-row .contact-text {
+        font-size: 0.75rem;
+    }
+}
+/* Optional additional styling — secondary accent for phone */
+.contact-row i.ph-phone-call {
+    background: none;
+}

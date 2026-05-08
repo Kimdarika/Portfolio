@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    .pro {
+        animation: float 3s ease-in-out infinite;
+        transition: all 0.3s ease;
+    }
+    .nav-hov:hover{
+        background: linear-gradient(
+        90deg,
+        orange,
+        rgb(255, 255, 255),
+        #2DD4BF
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+            
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +61,13 @@
                 <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
                 
                 <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
-                    <a href="../index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
-                    <a href="../index.html#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
-                    <a href="Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
-                    <a href="Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
-                    <a href="contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                    <a href="../index.html" class="text-accent-teal  transition duration-200 nav-hov">Home</a>
+                    <a href="../index.html#about" class="text-white  transition duration-200 nav-hov">About & Skills</a>
+                    <a href="Project.html" class="text-white  transition duration-200 nav-hov">Projects</a>
+                    <a href="Experience.html" class="text-white  transition duration-200 nav-hov">Experience</a>
+                    <a href="contact.html" class="text-white  transition duration-200 nav-hov">Contact</a>
                 </div>
-                <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
+                <button id="menu-button" class="md:hidden text-white  focus:outline-none p-2 rounded" aria-label="Toggle menu">
                     <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
@@ -52,11 +79,11 @@
             
             <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
                 <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
-                    <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-                    <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
-                    <a href="Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
-                    <a href="Experience.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-                    <a href="contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                    <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal  transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                    <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white  transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                    <a href="Project.html" class="block rounded-md px-3 py-2 text-white  transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                    <a href="Experience.html" class="block rounded-md px-3 py-2 text-white transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                    <a href="contact.html" class="block rounded-md px-3 py-2 text-white  transition duration-200 nav-hov" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
                 </div>
             </div>
         </nav>
