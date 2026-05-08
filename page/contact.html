@@ -70,138 +70,149 @@
             </div>
         </div>
     </nav>
-    <main>
-        <section id="hero-login" class="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-            <div class="absolute inset-0 bg-dark-teal opacity-90"></div>
-            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('../image/back.png');"></div>
-            <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
-                <div class="relative hidden md:block w-full h-full min-h-[500px]">
-                    <img class=" pro absolute inset-0 w-full h-full image-filter rounded-xl "src="../image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
-                    <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
+    <div class="portfolio-container">
+        <div class="hero-split">
+            
+            <!-- LEFT: refined content -->
+            <div class="intro">
+            <div class="eyebrow">
+                <i class="fas fa-star-of-life"></i> frontend · creator
+            </div>
+            <h1>Darika Kim</h1>
+            <div class="title-stack">
+                <span class="title-pill"><i class="fas fa-code"></i> Frontend Developer</span>
+                <span class="title-pill"><i class="fas fa-bullhorn"></i> Social Media Influencer</span>
+                <span class="title-pill"><i class="fas fa-palette"></i> Brand Strategist</span>
+            </div>
+            <p class="bio-text">
+                Design That Connects, Engages, and Elevates Your Brand — with editable templates, storytelling, and performance-driven code. 
+                I help creators & businesses scale their digital presence.
+            </p>
+
+            <!-- Contact information -->
+            <div class="contact-minimal">
+                <div class="contact-row">
+                <div class="contact-icon"><i class="far fa-envelope"></i></div>
+                <div class="contact-detail">darika.kim@student.passerellesnumeriques.org</div>
+                <button class="copy-btn" onclick="copyText('darika.kim@student.passerellesnumeriques.org')">Copy</button>
                 </div>
-                <div class="md:p-8 text-white text-center md:text-left">
-                    <p class="text-sm font-light text-teal-accent uppercase mb-2">GRAPHIC DESIGNER</p>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold tracking-widest uppercase mb-4 text-white glow-shadow">Darika Kim</h1>
-                    <p class="text-lg font-light text-teal-accent uppercase mb-6">SOCIAL MEDIA INFLUENCER</p>
-                    <p class="max-w-md mx-auto md:mx-0 mb-8 text-gray-300 border-l-4 border-teal-accent pl-4 py-2">Design That Connects, Engages, and Elevates Your Brand with Editable Templates to Boost Your Business Success.</p>
-                    <div class="flex flex-col space-y-4 max-w-xs mx-auto md:mx-0">
-                        <input type="email" placeholder="Email Address" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
-                        <input type="password" placeholder="Password" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
-                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-gray-900 hover:bg-teal-300 transition duration-300 box-glow">Login</button>
-                        <a href="#" class="text-sm text-gray-400 hover:text-teal-accent transition duration-200">Forgot password</a>
-                    </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-detail">+855 88 308 1226</div>
+                <button class="copy-btn" onclick="copyText('+855 88 308 1226')">Copy</button>
+                </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+                <div class="contact-detail">123 Anywhere St., Phnom Penh, Cambodia</div>
+                </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-detail"><a href="https://www.linkedin.com/in/darika-kim-a7939b39a/" target="_blank">linkedin.com/in/darika-kim</a></div>
+                <button class="copy-btn" onclick="window.open('https://www.linkedin.com/in/darika-kim-a7939b39a/', '_blank')">Open</button>
                 </div>
             </div>
-            <button class="absolute top-5 right-5 p-3 text-teal-accent hover:text-white transition duration-200">
-                <i class="ph-bold ph-magnifying-glass text-2xl"></i>
-            </button>
-        </section>
-    </main>
-    <hr >
-    <div class="bg-bg-main min-h-screen font-sans text-text-light">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-12">
-                
-                <div class="space-y-8 lg:col-span-1">
-                    <h1 class="text-6xl font-extrabold tracking-tight text-text-light">
-                        Get In <span class="text-primary-color">Touch</span>
-                    </h1>
-                    <p class="text-xl text-gray-400 max-w-sm">
-                        Ready to start a new project or discuss an opportunity? I'm always open to new connections.
-                    </p>
 
-                    <div class="space-y-6 pt-6">
-                        
-                        <a href="mailto:your.email@example.com" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
-                            <div class="flex items-center">
-                                <i class="fas fa-envelope text-accent-color text-2xl w-8"></i>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">Email Me</h3>
-                                    <p class="text-gray-400 text-sm">your.email@example.com</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="tel:+1234567890" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
-                            <div class="flex items-center">
-                                <i class="fas fa-phone-alt text-accent-color text-2xl w-8"></i>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">Call/Text</h3>
-                                    <p class="text-gray-400 text-sm">+1 (234) 567-890</p>
-                                </div>
-                            </div>
-                        </a>
+            <div class="btn-group">
+                <button class="btn-primary" onclick="alert('📧 Reach out: darika.kim@student.passerellesnumeriques.org')">
+                <i class="fas fa-comment"></i> Let's talk
+                </button>
+                <button class="btn-outline-light" onclick="alert('✨ Portfolio kit coming soon — DM for early access')">
+                <i class="fas fa-file-alt"></i> Portfolio / Kit
+                </button>
+            </div>
+            </div>
 
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="block p-4 bg-bg-card rounded-xl shadow-lg hover:bg-slate-700 transition duration-300 group">
-                            <div class="flex items-center">
-                                <i class="fas fa-link text-accent-color text-2xl w-8"></i>
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-bold text-text-light group-hover:text-primary-color transition duration-300">LinkedIn</h3>
-                                    <p class="text-gray-400 text-sm">Connect Professionally</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="flex space-x-6 pt-8 justify-start">
-                        <a href="https://github.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="GitHub Profile">
-                            <i class="fab fa-github text-3xl"></i>
-                        </a>
-                        <a href="https://twitter.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="X (Twitter) Profile">
-                            <i class="fab fa-twitter text-3xl"></i>
-                        </a>
-                        <a href="https://dribbble.com/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="Dribbble Profile">
-                            <i class="fab fa-dribbble text-3xl"></i>
-                        </a>
-                        <a href="https://behance.net/yourhandle" target="_blank" class="text-gray-400 hover:text-primary-color transition duration-150 transform hover:scale-110" aria-label="Behance Profile">
-                            <i class="fab fa-behance text-3xl"></i>
-                        </a>
-                    </div>
+            <!-- RIGHT: elegant portrait + social proof -->
+            <div class="portrait-card">
+            <div class="image-wrapper">
+                <img class="profile-img" src="/image/rika-contect.png" 
+                    alt="Darika Kim portrait" 
+                    onerror="this.src='https://placehold.co/600x800/0A0F1A/5EEAD4?text=✨+DARIKA+KIM+✨'">
+                <div class="image-overlay"></div>
+            </div>
+            
+            <!-- influence metrics -->
+            <div class="stats-row">
+                <div class="stat-item">
+                <div class="stat-number">4K</div>
+                <div class="stat-label">Followers</div>
                 </div>
-
-                <div class="mt-12 lg:mt-0 lg:col-span-2">
-                    <div class="bg-bg-card py-10 px-6 shadow-2xl rounded-2xl sm:px-12 border border-slate-700">
-                        <h2 class="text-4xl font-bold text-text-light mb-8">Send Me A Message</h2>
-                        <form id="portfolioContactForm" action="#" method="POST" class="space-y-6">
-                            
-                            <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                                <div>
-                                    <label for="full-name" class="block text-sm font-medium text-gray-300">Full Name *</label>
-                                    <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name"
-                                        class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-gray-300">Email *</label>
-                                    <input type="email" name="email" id="email" required placeholder="Enter your Email"
-                                        class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-300">Subject *</label>
-                                <input type="text" name="subject" id="subject" required placeholder="Project Inquiry, Job Offer, etc."
-                                    class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color">
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-300">Your Message *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project and requirements."
-                                    class="input-field mt-1 block w-full rounded-lg border-gray-600 py-3 px-4 shadow-md focus:ring-primary-color"></textarea>
-                            </div>
-
-                            <div class="pt-4">
-                                <button type="submit"
-                                    class="submit-button w-full bg-primary-color text-text-light py-3 px-6 border border-transparent rounded-lg text-xl font-bold shadow-lg transition duration-300 hover:bg-primary-dark focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-primary-color focus:ring-offset-bg-card">
-                                    <i class="fas fa-paper-plane mr-2"><a href="https://t.me/Darika_Kim"> Submit Inquiry</a></i>
-                                </button>
-                                <p id="formStatus" role="status" aria-live="polite" class="text-sm pt-4 hidden font-medium text-center"></p>
-                            </div>
-                        </form>
-                    </div>
+                <div class="stat-item">
+                <div class="stat-number">3.6k</div>
+                <div class="stat-label">Yearly Views</div>
                 </div>
+                <div class="stat-item">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Engagement</div>
+                </div>
+            </div>
+
+            <!-- social links -->
+            <div class="social-row">
+                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- collaboration badge -->
+            <div class="collab-badge">
+                <i class="fas fa-handshake"></i> Open for collaborations & brand deals
+            </div>
             </div>
         </div>
-    </div>
+        </div>
+
+        <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+            // elegant toast notification
+            const toast = document.createElement('div');
+            toast.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 8px;"></i> Copied to clipboard';
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                background: #1A1F2E;
+                backdrop-filter: blur(12px);
+                color: #5EEAD4;
+                padding: 12px 22px;
+                border-radius: 48px;
+                font-size: 0.85rem;
+                font-weight: 500;
+                border: 1px solid rgba(94,234,212,0.4);
+                z-index: 1000;
+                animation: fadeInUp 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            `;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+            });
+        }
+
+        // add animation keyframes dynamically if needed
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            }
+        `;
+        document.head.appendChild(style);
+        </script>
+    
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-about">

@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/css/phosphor.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/Backgrond.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -497,9 +501,11 @@
         </section>
         <main class="antialiased" style="background: #0A0C10; font-family: 'Inter', sans-serif;">
             <!-- PROJECTS SECTION - IMPROVED VISUALS, SAME CONTENT -->
-            <section id="projects" class="section-padding bg-dark-bg/60 border-t border-primary-dark projects-section">
+            <section id="projects" class="section-padding  border-t border-primary-dark projects-section">
                 <div class="container mx-auto px-6 max-w-7xl">
                     <!-- Section Header with better spacing -->
+                     
+                    <div class="bg-[url(/img/rika.jpg)] ..."></div>
                     <div class="text-center mb-12">
                         <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white tracking-wide">
                             School <span class="text-accent-teal" style="color: #2DD4BF;">Projects</span>
@@ -613,58 +619,222 @@
             </section>
         </main>
         
-        <section id="experience" class="section-padding bg-dark-bg border-t border-primary-dark">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-4xl font-bold text-center mb-16 text-white tracking-wide">
-                    Education & <span class="text-accent-teal">Experience</span>
-                </h2>
-                <div class="space-y-12">
-                    <div class="border-l-4 border-accent-teal pl-6 relative">
-                        <div class="absolute -left-3 top-0 w-6 h-6 bg-accent-teal rounded-full border-4 border-dark-bg"></div>
-                        <p class="text-lg font-bold text-white">Web development in School</p>
-                        <p class="text-accent-teal font-semibold">Passerelles numériques Cambodia, Phnom Penh</p>
-                        <p class="text-gray-400 text-sm italic mb-2">2023 - Present (Expected Graduation: 2026)</p>
-                        <p class="text-gray-300">Relevant Coursework: Data Structures & Algorithms, Database Management, Web Development, English.</p>
-                    </div>
-                    <div class="border-l-4 border-primary-dark pl-6 relative">
-                        <div class="absolute -left-3 top-0 w-6 h-6 bg-primary-dark rounded-full border-4 border-dark-bg"></div>
-                        <p class="text-lg font-bold text-white"> Web Development Project</p>
-                        <p class="text-primary-dark font-semibold">Tech Innovations Inc.</p>
-                        <p class="text-gray-400 text-sm italic mb-2">Summer 2025-2026</p>
-                        <p class="text-gray-300">Refers to a practical, hands-on project that a junior developer builds from start to finish. This is the single most effective way for them to learn essential skills, build a portfolio, and demonstrate their capabilities to potential employers.</p>
-                    </div>
+        <div class="education-section">
+            <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-graduation-cap"></i> Academic Journey
+            </div>
+            <h2 class="section-title">Education Background</h2>
+            </div>
+
+            <div class="education-grid">
+            <!-- Card 1: Passerelles Numériques Cambodia -->
+            <div class="edu-card">
+                <div class="edu-icon">
+                <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="school-name">Passerelles Numériques Cambodia</h3>
+                <div class="degree">Associate Degree</div>
+                <div class="date-row">
+                <i class="far fa-calendar-alt"></i>
+                <span>2025 — 2026</span>
+                </div>
+                <div class="edu-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span> Web programming</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Design (UX/UI)</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>English for IT/ English for work place</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Professional communication & leadership(Professional life)</span>
+                </div>
                 </div>
             </div>
-        </section>
-        
-        <section id="hero-login" class="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-            <div class="absolute inset-0 bg-dark-teal opacity-90"></div>
-            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/ae/26/fc/ae26fc1e8578b86ed5d37d657f3ac4fd.jpg');"></div>
-            <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
-                <div class="relative hidden md:block w-full h-full min-h-[500px]">
-                    <img class="pro absolute inset-0 w-full h-full image-filter rounded-xl" src="image/rika.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';" alt="Jeric Pulla profile portrait" />
-                    <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
+
+            <!-- Card 2: Khnarasandai High School -->
+            <div class="edu-card">
+                <div class="edu-icon">
+                <i class="fas fa-school"></i>
                 </div>
-                <div class="md:p-8 text-white text-center md:text-left">
-                    <p class="text-sm font-light text-teal-accent uppercase mb-2">GRAPHIC DESIGNER</p>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold tracking-widest uppercase mb-4 text-white glow-shadow">Darika Kim</h1>
-                    <p class="text-lg font-light text-teal-accent uppercase mb-6">SOCIAL MEDIA INFLUENCER</p>
-                    <p class="max-w-md mx-auto md:mx-0 mb-8 text-gray-300 border-l-4 border-teal-accent pl-4 py-2">Design That Connects, Engages, and Elevates Your Brand with Editable Templates to Boost Your Business Success.</p>
-                    <div class="flex flex-col space-y-4 max-w-xs mx-auto md:mx-0">
-                        <input type="email" placeholder="Email Address" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
-                        <input type="password" placeholder="Password" class="p-3 bg-white/10 border-2 border-teal-accent/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-accent transition duration-300" />
-                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-yellow-500 hover:bg-gray-200 transition duration-300 box-glow">Login</button>
-                        <button class="w-full py-3 font-semibold uppercase rounded-full bg-teal-accent text-yellow-500 hover:bg-gray-200 transition duration-300 box-glow"><a href="https://t.me/Darika_Kim">Send Me a Message</a> </button>
-                        <a href="#" class="text-sm text-gray-400 hover:text-teal-accent transition duration-200">Forgot password</a>
-                    </div>
+                <h3 class="school-name">Khnarasandai High School</h3>
+                <div class="degree">Baccalaureate II</div>
+                <div class="date-row">
+                <i class="far fa-calendar-alt"></i>
+                <span>2022 — 2024</span>
+                </div>
+                <div class="edu-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Science & Mathematics focus</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span> union of youth federations of cambodia</span>
+                </div>
                 </div>
             </div>
-            <button class="absolute top-5 right-5 p-3 text-teal-accent hover:text-white transition duration-200">
-                <i class="ph-bold ph-magnifying-glass text-2xl"></i>
-            </button> 
-        </section> 
+            </div>
+
+            <!-- optional: small note or achievement -->
+            <div style="text-align: center; margin-top: 2.5rem;">
+            <div style="display: inline-flex; align-items: center; gap: 0.8rem; background: rgba(94, 234, 212, 0.05); padding: 0.5rem 1.2rem; border-radius: 60px; font-size: 0.8rem; color: #9AA9BF;">
+                <i class="fas fa-trophy" style="color: #5EEAD4;"></i>
+                <span>Continuous learner · Tech enthusiast · Always growing</span>
+            </div>
+            </div>
+        </div>
+
     </main>
-    
+    <div class="portfolio-container">
+        <div class="hero-split">
+            
+            <!-- LEFT: refined content -->
+            <div class="intro">
+            <div class="eyebrow">
+                <i class="fas fa-star-of-life"></i> frontend · creator
+            </div>
+            <h1>Darika Kim</h1>
+            <div class="title-stack">
+                <span class="title-pill"><i class="fas fa-code"></i> Frontend Developer</span>
+                <span class="title-pill"><i class="fas fa-bullhorn"></i> Social Media Influencer</span>
+                <span class="title-pill"><i class="fas fa-palette"></i> Brand Strategist</span>
+            </div>
+            <p class="bio-text">
+                Design That Connects, Engages, and Elevates Your Brand — with editable templates, storytelling, and performance-driven code. 
+                I help creators & businesses scale their digital presence.
+            </p>
+
+            <!-- Contact information -->
+            <div class="contact-minimal">
+                <div class="contact-row">
+                <div class="contact-icon"><i class="far fa-envelope"></i></div>
+                <div class="contact-detail">darika.kim@student.passerellesnumeriques.org</div>
+                <button class="copy-btn" onclick="copyText('darika.kim@student.passerellesnumeriques.org')">Copy</button>
+                </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-detail">+855 88 308 1226</div>
+                <button class="copy-btn" onclick="copyText('+855 88 308 1226')">Copy</button>
+                </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+                <div class="contact-detail">123 Anywhere St., Phnom Penh, Cambodia</div>
+                </div>
+                <div class="contact-row">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-detail"><a href="https://www.linkedin.com/in/darika-kim-a7939b39a/" target="_blank">linkedin.com/in/darika-kim</a></div>
+                <button class="copy-btn" onclick="window.open('https://www.linkedin.com/in/darika-kim-a7939b39a/', '_blank')">Open</button>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn-primary" onclick="alert('📧 Reach out: darika.kim@student.passerellesnumeriques.org')">
+                <i class="fas fa-comment"></i> Let's talk
+                </button>
+                <button class="btn-outline-light" onclick="alert('✨ Portfolio kit coming soon — DM for early access')">
+                <i class="fas fa-file-alt"></i> Portfolio / Kit
+                </button>
+            </div>
+            </div>
+
+            <!-- RIGHT: elegant portrait + social proof -->
+            <div class="portrait-card">
+            <div class="image-wrapper">
+                <img class="profile-img" src="/image/rika-contect.png" 
+                    alt="Darika Kim portrait" 
+                    onerror="this.src='https://placehold.co/600x800/0A0F1A/5EEAD4?text=✨+DARIKA+KIM+✨'">
+                <div class="image-overlay"></div>
+            </div>
+            
+            <!-- influence metrics -->
+            <div class="stats-row">
+                <div class="stat-item">
+                <div class="stat-number">4K</div>
+                <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-item">
+                <div class="stat-number">3.6k</div>
+                <div class="stat-label">Yearly Views</div>
+                </div>
+                <div class="stat-item">
+                <div class="stat-number">96%</div>
+                <div class="stat-label">Engagement</div>
+                </div>
+            </div>
+
+            <!-- social links -->
+            <div class="social-row">
+                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- collaboration badge -->
+            <div class="collab-badge">
+                <i class="fas fa-handshake"></i> Open for collaborations & brand deals
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+            // elegant toast notification
+            const toast = document.createElement('div');
+            toast.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 8px;"></i> Copied to clipboard';
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                background: #1A1F2E;
+                backdrop-filter: blur(12px);
+                color: #5EEAD4;
+                padding: 12px 22px;
+                border-radius: 48px;
+                font-size: 0.85rem;
+                font-weight: 500;
+                border: 1px solid rgba(94,234,212,0.4);
+                z-index: 1000;
+                animation: fadeInUp 0.3s ease;
+                font-family: 'Inter', sans-serif;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            `;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+            });
+        }
+
+        // add animation keyframes dynamically if needed
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-about">

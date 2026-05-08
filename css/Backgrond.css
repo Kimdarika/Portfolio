@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0A0C10;
+  color: #E8EDF2;
+  line-height: 1.5;
+}
+/* education section container */
+.education-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+/* section header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(94, 234, 212, 0.1);
+  border: 1px solid rgba(94, 234, 212, 0.3);
+  padding: 0.4rem 1.2rem;
+  border-radius: 60px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #5EEAD4;
+  margin-bottom: 1rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FFFFFF, #B2F0E4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* education grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+}
+/* education card */
+.edu-card {
+  background: rgba(20, 24, 32, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 28px;
+  border: 1px solid rgba(94, 234, 212, 0.15);
+  padding: 2rem;
+  transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  position: relative;
+  overflow: hidden;
+}
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #5EEAD4, #3ECFBA, #5EEAD4);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.edu-card:hover::before {
+  transform: scaleX(1);
+}
+.edu-card:hover {
+  border-color: rgba(94, 234, 212, 0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+}
+/* card icon */
+.edu-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(94, 234, 212, 0.05));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #5EEAD4;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
+}
+.edu-card:hover .edu-icon {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.25), rgba(94, 234, 212, 0.1));
+}
+/* school name */
+.school-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+/* degree */
+.degree {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5EEAD4;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  background: rgba(94, 234, 212, 0.08);
+  padding: 0.2rem 0.8rem;
+  border-radius: 30px;
+}
+/* date row */
+.date-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0.75rem 0;
+  color: #8A99B0;
+  font-size: 0.85rem;
+}
+.date-row i {
+  color: #5EEAD4;
+  font-size: 0.75rem;
+}
+/* description / highlights */
+.edu-highlights {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: #B0B8C5;
+  margin-bottom: 0.6rem;
+}
+.highlight-item i {
+  color: #5EEAD4;
+  font-size: 0.7rem;
+}
+/* timeline connector (optional decorative) */
+.timeline-decoration {
+  display: none;
+}
+/* variant styles for cards */
+.edu-card:nth-child(1) .edu-icon {
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.2), rgba(94, 234, 212, 0.05));
+}
+/* responsive */
+@media (max-width: 850px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .education-section {
+    padding: 3rem 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .edu-card {
+    padding: 1.5rem;
+  }
+  .school-name {
+    font-size: 1.3rem;
+  }
+}
+/* hover animation for cards staggered */
+.edu-card {
+  animation: fadeUpCard 0.5s ease-out backwards;
+}
+.edu-card:nth-child(1) { animation-delay: 0.1s; }
+.edu-card:nth-child(2) { animation-delay: 0.2s; }
+@keyframes fadeUpCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
