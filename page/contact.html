@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Developer Portfolio | Single-Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/portfolio.js"></script>
-    <link rel="stylesheet" href="/css/Portfolio.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <script src="../js/portfolio.js"></script>
+    <link rel="stylesheet" href="../css/Portfolio.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -18,11 +18,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
             <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
-                <a href="/index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
-                <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
-                <a href="/page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
-                <a href="/page/Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
-                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                <a href="../index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                <a href="../index.html#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                <a href="Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                <a href="Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                <a href="contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
             </div>
             <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
                 <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,21 +35,21 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
             <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
-                <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-                <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
-                <a href="/page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
-                <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="Experience.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
             </div>
         </div>
     </nav>
     <main>
         <section id="hero-login" class="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
             <div class="absolute inset-0 bg-dark-teal opacity-90"></div>
-            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/image/back.png');"></div>
+            <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('../image/back.png');"></div>
             <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
                 <div class="relative hidden md:block w-full h-full min-h-[500px]">
-                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="/image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
+                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="../image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
                     <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
                 </div>
                 <div class="md:p-8 text-white text-center md:text-left">
@@ -179,9 +179,9 @@
         <div class="footer-container">
             <div class="footer-about">
                 <div class="logo">
-                    <img class="logo-footer" src="/image/rika.jpg" alt="">
-                    <img class="logo-footer" src="/image/web.png" alt="">
-                    <img class="logo-footer" src="/image/mu.png" alt="">
+                    <img class="logo-footer" src="../image/rika.jpg" alt="">
+                    <img class="logo-footer" src="../image/web.png" alt="">
+                    <img class="logo-footer" src="../image/mu.png" alt="">
                 </div>
                 <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
                 <div class="d-flex gap-3">
@@ -204,11 +204,11 @@
                 <div>
                     <h3>OUR PAGES</h3>
                     <ul>
-                        <li><a href="/index.html">Home Page</a></li>
-                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
-                        <li><a href="/page/store.html">Project Page</a></li>
-                        <li><a href="/page/help.html">Experience Page</a></li>
-                        <li><a href="/page/contact.html">Contact Page</a></li>
+                        <li><a href="../index.html">Home Page</a></li>
+                        <li><a href="../index.html#about">About and Skill Page</a></li>
+                        <li><a href="Project.html">Project Page</a></li>
+                        <li><a href="Experience.html">Experience Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
                     </ul>
                 </div>
                 <div>

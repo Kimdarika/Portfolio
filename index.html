@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Developer Portfolio | Single-Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/portfolio.js"></script>
-    <link rel="stylesheet" href="/css/Portfolio.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <script src="js/portfolio.js"></script>
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,9 +19,9 @@
             <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
                 <a href="#hero" class="text-accent-teal hover:text-white transition duration-200">Home</a>
                 <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
-                <a href="/page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
+                <a href="page/Project.html" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
                 <a href="#experience" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
-                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                <a href="page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
             </div>
             <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
                 <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,9 +37,9 @@
             <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
                 <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
                 <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
-                <a href="/page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="page/Project.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
                 <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                <a href="page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
             </div>
         </div>
     </nav>
@@ -52,10 +52,10 @@
                         Hello There!
                     </p>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                        I'm <span class="text-amber-500 transition hover:text-amber-400">Darika Kim</span>, Student web developer in <span class="text-amber-500 transition hover:text-amber-400">PNC</span>.
+                        I'm <span class="text-amber-500 transition hover:text-amber-400">Darika Kim</span>, Student Web Programming at <span class="text-amber-500 transition hover:text-amber-400">PNC</span>.
                     </h1>
                     <p class="text-lg text-gray-300 mb-10">
-                        My name is Darika. I come from Siem Reap Province. I am currently a student in the 2026c cohort at Passerelles numériques Cambodia, focusing on building modern web applications.
+                        My name is Darika. I come from Siem Reap Province. I am currently a student in the 2026B cohort at Passerelles numériques Cambodia, focusing on building modern web applications.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 sm:justify-center lg:justify-start">
                         <a href="#" class="inline-flex inline-flex-1 items-center justify-center px-8 py-3 font-semibold rounded-lg bg-yellow-600 text-white shadow-lg transition hover:bg-orange-500 hover:-translate-y-1 focus:ring-4 focus:ring-orange-500 focus:ring-opacity-50"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>View My Portfolio </a>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
                     <img 
-                        src="/image/rika.jpg" 
+                        src="image/rika.jpg" 
                         alt="Darika Kim Professional Portrait"
                         class="w-80 h-80 object-cover rounded-full border-8 border-yellow-600 shadow-2xl transition hover:scale-[1.03] hover:shadow-orange-600/70"
                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/4F46E5/FFFFFF?text=Darika+Kim';"
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <div class="project-card p-6 rounded-xl shadow-lg transition duration-300">
-                        <img src="/image/2.jpg" alt="Project 3 Thumbnail" class="rounded-lg mb-4 w-full h-40 object-cover">
+                        <img src="image/2.jpg" alt="Project 3 Thumbnail" class="rounded-lg mb-4 w-full h-40 object-cover">
                         <h3 class="text-2xl font-bold mb-2 text-accent-teal">Grow Skin</h3>
                         <p class="text-gray-400 mb-4 text-sm">Website Focus: This brand specializes in clean mineral makeup and skincare products, offering a wide range of clinically-proven formulas and very common phrase used by numerous skincare.</p>
                         <p class="font-mono text-xs text-gray-500 mb-4">My current focus is on mastering HTML JavaScript, Python, React, SQL, Git to create robust, full-stack applications.</p>
@@ -201,7 +201,7 @@
             <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/ae/26/fc/ae26fc1e8578b86ed5d37d657f3ac4fd.jpg');"></div>
             <div class="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20">
                 <div class="relative hidden md:block w-full h-full min-h-[500px]">
-                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="/image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
+                    <img class="absolute inset-0 w-full h-full image-filter rounded-xl "src="image/rika.jpg"onerror="this.onerror=null; this.src='https://placehold.co/600x800/041724/00bcd4?text=JERIC+PULLA+PROFILE';"alt="Jeric Pulla profile portrait" />
                     <div class="absolute inset-0 rounded-xl box-glow opacity-30"></div>
                 </div>
                 <div class="md:p-8 text-white text-center md:text-left">
@@ -227,9 +227,9 @@
         <div class="footer-container">
             <div class="footer-about">
                 <div class="logo">
-                    <img class="logo-footer" src="/image/rika.jpg" alt="">
-                    <img class="logo-footer" src="/image/web.png" alt="">
-                    <img class="logo-footer" src="/image/mu.png" alt="">
+                    <img class="logo-footer" src="image/rika.jpg" alt="">
+                    <img class="logo-footer" src="image/web.png" alt="">
+                    <img class="logo-footer" src="image/mu.png" alt="">
                 </div>
                 <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
                 <div class="d-flex gap-3">
@@ -252,11 +252,11 @@
                 <div>
                     <h3>OUR PAGES</h3>
                     <ul>
-                        <li><a href="/index.html">Home Page</a></li>
-                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
-                        <li><a href="/page/store.html">Project Page</a></li>
-                        <li><a href="/page/help.html">Experience Page</a></li>
-                        <li><a href="/page/contact.html">Contact Page</a></li>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="index.html#about">About and Skill Page</a></li>
+                        <li><a href="page/Project.html">Project Page</a></li>
+                        <li><a href="page/Experience.html">Experience Page</a></li>
+                        <li><a href="page/contact.html">Contact Page</a></li>
                     </ul>
                 </div>
                 <div>

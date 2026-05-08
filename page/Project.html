@@ -8,21 +8,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/Portfolio.css">
-    <script src="/js/portfolio.js"></script>
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/Project.css">
+    <link rel="stylesheet" href="../css/Portfolio.css">
+    <script src="../js/portfolio.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/Project.css">
 </head>
 <body class="antialiased">
     <nav class="sticky top-0 z-50 bg-dark-bga/90 backdrop-blur-md shadow-xl border-b border-primary-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <span class="text-xl font-bold text-white uppercase tracking-wider">Darika Kim</span>
             <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase">
-                <a href="/index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
-                <a href="#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
+                <a href="../index.html" class="text-accent-teal hover:text-white transition duration-200">Home</a>
+                <a href="../index.html#about" class="text-white hover:text-accent-teal transition duration-200">About & Skills</a>
                 <a href="#projects" class="text-white hover:text-accent-teal transition duration-200">Projects</a>
-                <a href="/page/Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
-                <a href="/page/contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
+                <a href="Experience.html" class="text-white hover:text-accent-teal transition duration-200">Experience</a>
+                <a href="contact.html" class="text-white hover:text-accent-teal transition duration-200">Contact</a>
             </div>
             <button id="menu-button" class="md:hidden text-white hover:text-accent-teal focus:outline-none p-2 rounded" aria-label="Toggle menu">
                 <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,34 +35,54 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-dark-bga/90 border-b border-primary-dark shadow-inner pb-2">
             <div class="flex flex-col space-y-1 px-2 pt-2 pb-3 text-sm font-semibold uppercase">
-                <a href="#hero" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-                <a href="#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
+                <a href="../index.html" class="block rounded-md px-3 py-2 text-accent-teal hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+                <a href="../index.html#about" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About & Skills</a>
                 <a href="#projects" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
-                <a href="#experience" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-                <a href="/page/contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+                <a href="Experience.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="contact.html" class="block rounded-md px-3 py-2 text-white hover:bg-dark-bga/50 transition duration-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
             </div>
         </div>
     </nav>
-    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://i.pinimg.com/736x/39/8b/b0/398bb0df12de03c82f4edf2e7f0bcb29.jpg');"></div>
+    <div 
+        class="absolute inset-0 bg-cover bg-center opacity-10"
+        style="background-image: url('../image/rika.jpg');">
+    </div>
+
     <header id="home" class="hero-section d-flex align-items-center text-center">
         <div class="container py-5">
+
             <div class="flex flex-col items-center justify-center text-center">
-                <img class="pro w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-xl" src="/image/rika.jpg" alt="User Profile Picture"onerror="this.onerror=null; this.src='https://placehold.co/400x400/10B981/ffffff?text=PFP';">
+                <img 
+                    class="pro w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white shadow-xl" 
+                    src="../image/rika.jpg" 
+                    alt="User Profile Picture"
+                    onerror="this.onerror=null; this.src='https://placehold.co/400x400/10B981/ffffff?text=PFP';">
             </div>
+
             <p class="mb-2 text-primary-custom h5">
                 <i class="fas fa-caret-right"></i> Welcome to My Project in School
             </p>
+
             <h1 class="display-1 fw-bold mb-3 text-white">
                 DARIKA <span class="text-primary-custom">KIM</span>
             </h1>
-            <p class="lead mb-4 text-gray"> PYTHON | JAVASCRIPT | HTML/CSS | GITHUB | VERCEL</p>
-            
+
+            <p class="lead mb-4 text-gray">
+                PYTHON | JAVASCRIPT | HTML/CSS | GITHUB | VERCEL
+            </p>
+
             <h2 class="h5 mb-5 mx-auto text-light" style="max-width: 800px;">
-               I have built a lot of Website It has Coffee shop, Analysis Student performance , Scan type of rice, Skin Care Website, Email System and PNC school Website also.I have use Python, Github, HTML css, JS ,SASS, Vercel Hosting also.
+                I have built a lot of Website It has Coffee shop, Analysis Student performance, 
+                Scan type of rice, Skin Care Website, Email System and PNC school Website also.
+                I have use Python, Github, HTML css, JS, SASS, Vercel Hosting also.
             </h2>
-            <a href="#projects" class="btn btn-lg fw-bold me-3 shadow-lg" style="background-color: var(--dk-primary); color: var(--dk-background-dark);">
+
+            <a href="#projects" 
+            class="btn btn-lg fw-bold me-3 shadow-lg"
+            style="background-color: var(--dk-primary); color: var(--dk-background-dark);">
                 <i class="fas fa-laptop-code me-2"></i> VIEW LIVE PROJECTS
             </a>
+
         </div>
     </header>
     <hr style="color: aliceblue ;">
@@ -356,9 +376,9 @@
         <div class="footer-container">
             <div class="footer-about">
                 <div class="logo">
-                    <div ><img class="logo-footer" src="/image/rika.jpg" alt=""></div>
-                    <div ><img class="logo-footer" src="/image/web.png" alt=""></div>
-                    <div ><img class="logo-footer" src="/image/mu.png" alt=""></div>
+                    <div ><img class="logo-footer" src="../image/rika.jpg" alt=""></div>
+                    <div ><img class="logo-footer" src="../image/web.png" alt=""></div>
+                    <div ><img class="logo-footer" src="../image/mu.png" alt=""></div>
                 </div>
                 <p>This portfolio website it is very important. Because information in this web site it show about informatin all of me. informtion in this website it has What I has learn, what I met also. </p>
                 <div class="d-flex gap-3">
@@ -381,11 +401,11 @@
                 <div>
                     <h3>OUR PAGES</h3>
                     <ul>
-                        <li><a href="/index.html">Home Page</a></li>
-                        <li><a href="/page/face skin.html">About and Skill Page</a></li>
-                        <li><a href="/page/store.html">Project Page</a></li>
-                        <li><a href="/page/help.html">Experience Page</a></li>
-                        <li><a href="/page/contact.html">Contact Page</a></li>
+                        <li><a href="../index.html">Home Page</a></li>
+                        <li><a href="../index.html#about">About and Skill Page</a></li>
+                        <li><a href="Project.html">Project Page</a></li>
+                        <li><a href="Experience.html">Experience Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
                     </ul>
                 </div>
                 <div>
